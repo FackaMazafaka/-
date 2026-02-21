@@ -1,0 +1,91 @@
+.footer-colums {
+  display: flex;
+}
+.footer-column {
+  flex: 50%;
+    margin: 20px;
+}
+header, footer {
+  background-color: grey
+    
+}
+main {
+  padding: 10px;
+    background-color: silver;
+}
+.post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+}
+.post img {
+  margin:20px;
+}
+#menu ul{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  display:block;
+  width:100%;
+  height:auto;
+  list-style:none;
+}
+#menu{
+  position: relative;
+  display:block;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+#menu > ul::after{
+  display:block;
+  width:100%;
+  height:0px;
+  clear: both;
+  content: " ";
+}
+#menu ul li{
+  position: relative;
+  display: block;
+  float: left;
+  width: auto;
+  height: auto
+}
+#menu ul li a{
+  display:block;
+  padding:9px 25px 0px 25px;
+  font-size: 14px;
+  line-height: 1.3 em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 36px;
+  box-sizing:border-box;
+  color: black;
+}
+#menu ul li ul{
+position:absolute;
+  top: 36px;
+  left: 0px;
+  display: none;
+  width: 200px;
+}
+#menu ul li:hover ul{
+  display:block;
+}
+#menu ul li ul li{
+  float: none;
+  width: 100%;
+}
+#menu ul li ul li a{
+  display:block;
+  text-transform: none;
+  height: auto;
+  padding: 7px 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#menu ul li ul li:first-child a{
+  border-top: 0px;
+}
